@@ -1,0 +1,73 @@
+  <!DOCTYPE html>
+  <html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Task-Manager</title>
+    <link href="/style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" /> 
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" /><script src="https://cdn.tailwindcss.com"></script>
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"/>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+
+<body>
+  <div id="nav">
+    <div id="navleft">
+      <h5>TASK</h5>
+      <h3>PLANNER</h3> 
+    </div>
+    <div id="navright">
+      <div id="anim1">
+      <a class="tracking-tight" href="/">HOME</a>
+         <a class="tracking-tight" href="/">HOME</a>
+        </div>
+      <div id="anim2">
+      <a class="tracking-tight" href="/create">CREATE NEW TASK</a>
+         <a class="tracking-tight" href="/create">CREATE NEW TASK</a>
+        </div>
+    </div>
+  </div>
+  <div id="cursor"></div>
+  <div id="main">
+  <div id="page1">
+    <div id="rpage1">
+    <div id="edittxt">
+      <h1>task of <span
+        class="text-red-600"><%=filename%></span></h1>
+      
+  </div>
+    <div id="rtext">
+       <%= filedata %>
+    </div>
+      <div id="reditbut">  
+      <a class="text-zinc-400" href="/edit/<%= filename %>">EDIT</a>
+        <a class="text-green-500" href="/edit/<%= filename %>">EDIT</a>
+      </div>
+      </div>
+  </div>
+
+
+
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script> 
+  <script  type="text/javascript"  src="https://unpkg.com/sheryjs/dist/Shery.js"></script> <!-- Recommended -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
+  <script type="text/javascript" src="https://unpkg.com/sheryjs/dist/Shery.js"></script>
+  
+  
+  
+  <script src="/s1.js"></script>
+ 
+</body>
+
+</html>

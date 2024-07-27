@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Task-Manager</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" /> 
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" /><script src="https://cdn.tailwindcss.com"></script>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"/>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+</head>
+
+<body>
+ 
+  <div id="nav">
+    <div id="navleft">
+      <h5>TASK</h5>
+      <h3>PLANNER</h3> 
+    </div>
+    <div id="navright">
+      <div id="anim1">
+      <a class="tracking-tight" href="/">HOME</a>
+         <a class="tracking-tight" href="/">HOME</a>
+        </div>
+      <div id="anim2">
+      <a class="tracking-tight" href="/create">CREATE NEW TASK</a>
+         <a class="tracking-tight" href="/create">CREATE NEW TASK</a>
+        </div>
+    </div>
+  </div>
+  <div id="cursor"></div>
+  <div id="main">
+  <div id="page1">
+    <div id="oleft">
+      <div id="oltext">
+        <div id="anim3">
+      <h3>1. THE</h3>
+           <h3>1. THE</h3>
+          </div>
+        <div id="anim4">
+      <h3>ULTIMATE</h3>
+           <h3>ULTIMATE</h3>
+          </div>
+         <div id="anim5">
+        <h3>TO DO</h3>
+           <h3>TO DO</h3>
+           </div>
+         <div id="anim6">
+        <h3>LIST</h3>
+            <h3>LIST</h3>
+           </div>
+      
+        </div>
+      <div id="obot">
+        <a href="/create">CREATE TASK <img src="assets/icons8-arrow-100.png"/></a>
+       
+      </div>
+    </div>
+ <div id="spline">
+   <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.2/build/spline-viewer.js"></script>
+   <spline-viewer hint url="https://prod.spline.design/sVzZjN0SiZlTbPr2/scene.splinecode"></spline-viewer>
+ </div>
+    </div>
+    <div id="page2">
+      <div id="page2-cont">
+        <div id="tasks">
+          <div id="text">
+          <h1>2. ALL TASKS</h1>
+            </div>
+
+
+            <% if(files.length >0) {%>
+              <div id="task-cards">
+                <div class="swiper mySwiper">
+                  <div class="swiper-wrapper">
+              <% files.forEach((file)=>{ %>
+                
+                      <div class="swiper-slide">
+                        <div id="cards">
+                          <div id="ctop"><h3><%= file %></h3></div>
+                          <div id="cmid"><h3><a href="/read/<%= file %>">
+                            Read<span id="space">&#10132;</span>
+                          </a></h3></div>
+                          <div id="cbot">
+                            <a id="edit" href="/edit/<%= file %>"><h3>Edit</h3></a>
+                            <a href="/delete/<%= file %>"><i
+                              class="w-8 h-8 text-red-500 flex items-center justify-center bg-white rounded-full ri-delete-bin-line"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                    
+
+              <% }) %>
+              
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+              <% } else { %>
+                <div id="nothing">
+                  <section>
+                    <p class="reveal-type" data-bg-color="#353535" data-fg-color="red">nothing to show<br>create new task<br>to never miss a<br>deadline again.</p>
+                </section>
+            
+                    
+                </div>
+                <% } %>
+
+          
+        </div>
+        </div>
+      
+      <div id="page2-bot">
+        <div id="move">
+         
+          <div class="marque">
+            <h1>Organize with Ease →</h1>
+        
+          </div>
+          <div class="marque">
+            <h1>Organize with Ease →</h1>
+             
+          </div>
+          <div class="marque">
+            <h1>Organize with Ease →</h1>
+
+          </div>
+          <div class="marque">
+            <h1>Organize with Ease →</h1>
+
+          </div>
+          <div class="marque">
+            <h1>Organize with Ease →</h1>
+
+          </div>
+          <div class="marque">
+            <h1>Organize with Ease →</h1>
+
+          </div>
+        </div>
+        <div id="move1">
+
+          <div class="marque1">
+            <h1>Organize with Ease →</h1>
+
+          </div>
+          <div class="marque1">
+            <h1>Organize with Ease →</h1>
+
+          </div><div class="marque1">
+            <h1>Organize with Ease →</h1>
+
+          </div><div class="marque1">
+            <h1>Organize with Ease →</h1>
+
+          </div><div class="marque1">
+            <h1>Organize with Ease →</h1>
+
+          </div><div class="marque1">
+            <h1>Organize with Ease →</h1>
+
+          </div><div class="marque1">
+            <h1>Organize with Ease →</h1>
+
+          </div>
+          <div class="marque1">
+            <h1>Organize with Ease →</h1>
+
+          </div>
+          <div class="marque1">
+            <h1>Organize with Ease →</h1>
+
+          </div>
+          <div class="marque1">
+            <h1>Organize with Ease →</h1>
+
+          </div>
+          <div class="marque1">
+            <h1>Organize with Ease →</h1>
+
+          </div>
+          <div class="marque1">
+            <h1>Organize with Ease →</h1>
+
+          </div>
+        </div>
+        <div id="move">
+
+          <div class="marque">
+            <h1>Organize with Ease →</h1>
+
+          </div>
+          <div class="marque">
+            <h1>Organize with Ease →</h1>
+
+          </div>
+          <div class="marque">
+            <h1>Organize with Ease →</h1>
+
+          </div>
+          <div class="marque">
+            <h1>Organize with Ease →</h1>
+
+          </div>
+          <div class="marque">
+            <h1>Organize with Ease →</h1>
+
+          </div>
+          <div class="marque">
+            <h1>Organize with Ease →</h1>
+
+          </div>
+        </div>
+      </div>
+      <div id="creator">by-Rohit</div>
+    </div>
+    </div>
+
+
+  
+    <script src="https://unpkg.com/split-type"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script> 
+  <script  type="text/javascript"  src="https://unpkg.com/sheryjs/dist/Shery.js"></script> <!-- Recommended -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
+  <script type="text/javascript" src="https://unpkg.com/sheryjs/dist/Shery.js"></script>
+  
+  
+  
+  <script src="script.js"></script>
+ 
+</body>
+
+</html>
